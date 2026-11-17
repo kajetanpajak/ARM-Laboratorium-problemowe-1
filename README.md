@@ -15,6 +15,7 @@ git clone https://github.com/kajetanpajak/ARM-Laboratorium-problemowe-1.git
 
 ```bash
 cd /arm_ws
+apt-get update
 rosdep update
 rosdep install --from-paths src --ignore-src --rosdistro jazzy -y
 ```
@@ -31,8 +32,8 @@ source /arm_ws/install/setup.bash
 
 ## 4. Configure the map
 
-In the `map.yaml` loaded by the simulation, set `free_thresh` to the
-tested value that keeps free and unknown regions separate:
+In the `map.yaml` loaded by the simulation (`/arm_ws/arm05_sim/map/map.yaml`), change `free_thresh` to a value
+that keeps free and unknown regions distinguished:
 
 ```yaml
 free_thresh: 0.196
