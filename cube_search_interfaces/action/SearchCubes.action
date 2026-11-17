@@ -1,0 +1,12 @@
+# Goal
+uint32 expected_count
+---
+# Result: all positions use the frame specified in header.
+std_msgs/Header header
+cube_search_interfaces/Cube[] cubes
+string message
+---
+# Feedback
+uint32 found_count
+uint32 visited_waypoints
+string current_activity

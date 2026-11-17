@@ -1,0 +1,2 @@
+std_msgs/Header header
+cube_search_interfaces/MarkerDetection[] detections
